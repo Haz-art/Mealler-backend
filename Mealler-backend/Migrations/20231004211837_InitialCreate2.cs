@@ -5,7 +5,7 @@
 namespace Mealler_backend.Migrations
 {
     /// <inheritdoc />
-    public partial class NewMigration : Migration
+    public partial class InitialCreate2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
