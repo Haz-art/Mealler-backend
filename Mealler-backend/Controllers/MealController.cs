@@ -12,7 +12,7 @@ public class MealController : ControllerBase {
     {
         _context = context;
     }
-    
+
     [HttpGet("meal")]
     public async Task<IActionResult> GetMealsAfterId([FromQuery] int startId, [FromQuery] int count)
     {
