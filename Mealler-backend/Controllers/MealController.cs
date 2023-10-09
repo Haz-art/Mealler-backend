@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Mealler_backend.Controllers;
 
-[Route("api/[controller]")]
 [ApiController]
+[Route("api/[controller]")]
 
 public class MealController : ControllerBase {
     private readonly MealDbContext _context;

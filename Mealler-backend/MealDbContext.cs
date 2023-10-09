@@ -11,6 +11,7 @@ public class MealDbContext : DbContext
     }
 
     public DbSet<Meal> Meals { get; set; }
+    public DbSet<Category> Categories { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
