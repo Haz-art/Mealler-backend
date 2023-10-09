@@ -16,6 +16,20 @@ public class MealDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        //n-n relation (Meal - Category)
+        modelBuilder.Entity<MealCategory>()
+            .HasKey(mc => new { mc.MealId, mc.CategoryId });
+
+        modelBuilder.Entity<MealCategory>()
+            .HasOne(mc => mc.Meal)
+            .WithMany(m => m.MealCategories)
+            .HasForeignKey(mc => mc.MealId);
+
+        modelBuilder.Entity<MealCategory>()
+            .HasOne(mc => mc.Category)
+            .WithMany(c => c.MealCategories)
+            .HasForeignKey(mc => mc.CategoryId);
     }
 
 }
