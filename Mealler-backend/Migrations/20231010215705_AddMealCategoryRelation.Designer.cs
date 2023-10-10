@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Mealler_backend.Migrations
 {
     [DbContext(typeof(MealDbContext))]
-    [Migration("20231009212609_AddMealCategoryRelation")]
+    [Migration("20231010215705_AddMealCategoryRelation")]
     partial class AddMealCategoryRelation
     {
         /// <inheritdoc />
