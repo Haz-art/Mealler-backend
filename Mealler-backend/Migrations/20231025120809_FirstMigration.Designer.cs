@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Mealler_backend.Migrations
 {
     [DbContext(typeof(MealDbContext))]
-    [Migration("20231014135615_MealsAndCategories")]
-    partial class MealsAndCategories
+    [Migration("20231025120809_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
